@@ -7,7 +7,7 @@ Eg. usecase is to create a parameterized shortcut to this script with a specifie
 ## How-to-use:
 
 ```powershell 
-powershell -executionpolicy bypass -file {PATH_PS1_SCRIPT} "{PATH_EXECUTABLE}" "{PRIORITY_TARGET}"
+powershell -executionpolicy bypass -file "{PATH_PS1_SCRIPT}" "{PATH_EXECUTABLE}" "{PRIORITY_TARGET}"
 ```
 
 #### Parameter:
@@ -19,7 +19,7 @@ powershell -executionpolicy bypass -file {PATH_PS1_SCRIPT} "{PATH_EXECUTABLE}" "
 #### Example:
 
 ```powershell 
-powershell -executionpolicy bypass -file C:\Users\jan\Desktop\Set-Scheduling-Priority.ps1 "notepad.exe" "high"
+powershell -executionpolicy bypass -file "C:\Users\jan\Desktop\Set-Scheduling-Priority.ps1" "notepad.exe" "high"
 ```
 
 <ins>*Disclaimer:*</ins><br>
