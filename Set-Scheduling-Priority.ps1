@@ -45,7 +45,7 @@ param(
 # Lifts this script to adminstrator and passes to Phase-1
 function Phase-0 {
     #Start-Process powershell -verb runas -ArgumentList "-ExecutionPolicy", "Bypass", "-noexit", "-file", $PSCommandPath, $Executable, $Piority, "1"
-    Start-Process powershell -verb runas -ArgumentList "-ExecutionPolicy", "Bypass", "-file", $PSCommandPath, $Executable, $Piority, "1"
+    Start-Process powershell -verb runas -ArgumentList "-ExecutionPolicy", "Bypass", "-WindowStyle", "hidden", "-file", $PSCommandPath, $Executable, $Piority, "1"
 }
 
 # Executes given executable and changes its priority to specified value
