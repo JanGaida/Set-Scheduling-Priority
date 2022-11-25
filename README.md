@@ -24,5 +24,5 @@ powershell -executionpolicy bypass -file "C:\Users\jan\Desktop\Set-Scheduling-Pr
 
 <ins>*Disclaimer:*</ins><br>
 Whitespaces in the filepaths must be escaped, ie. instead of "C:\Program Files" use "C:\PROGRA~1\\..".<br>
-Script requires adminstrator-permission to change to 'REALTIME'-Priority.
+Script requires adminstrator-permission to apply 'REALTIME'-Priority.
 
