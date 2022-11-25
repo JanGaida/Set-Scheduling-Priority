@@ -16,13 +16,17 @@ powershell -executionpolicy bypass -file "{PATH_PS1_SCRIPT}" "{PATH_EXECUTABLE}"
 \- *{PRIORITY_TARGET}* is the targeted priority-level
 
 
-#### Example:
+#### Examples:
 
 ```powershell 
 powershell -executionpolicy bypass -file "C:\Users\jan\Desktop\Set-Scheduling-Priority.ps1" "notepad.exe" "high"
+
+powershell -executionpolicy bypass -file "C:\Users\jan\Set-Scheduling-Priority.ps1" "C:\PROGRA~2\Grinding Gear Games\Path of Exile\PathOfExile.exe" "HIGH"
 ```
 
 <ins>*Disclaimer:*</ins><br>
-Whitespaces in the filepaths must be escaped, ie. instead of "C:\Program Files" use "C:\PROGRA~1\\..".<br>
-Script requires adminstrator-permission to apply 'REALTIME'-Priority.
+\- Whitespaces in the filepaths of the ps-script must be escaped, ie.:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"C:\Program Files\Set-Scheduling-Priority.ps1" --> "C:\PROGRA\~1\\Set-Scheduling-Priority.ps1"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   "C:\Program Files (x86)\Set-Scheduling-Priority.ps1" --> "C:\PROGRA\~2\\Set-Scheduling-Priority.ps1"<br>
+\- Script requires adminstrator-permission to apply 'REALTIME'-Priority.
 
