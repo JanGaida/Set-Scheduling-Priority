@@ -26,7 +26,7 @@ powershell -executionpolicy bypass -file "{PATH_PS1_SCRIPT}" "{PATH_EXECUTABLE}"
 
 ```powershell 
 powershell -executionpolicy bypass -file C:\Users\jan\Set-Scheduling-Priority.ps1 "notepad.exe" "below_normal"
-powershell -executionpolicy bypass -file "C:\Users\jan\Set-Scheduling-Priority.ps1" "C:\PROGRA~1\WindowsApps\Microsoft.WindowsTerminal" "Realtime"
+powershell -executionpolicy bypass -file "C:\Users\jan\Set-Scheduling-Priority.ps1" "C:\PROGRA~1\WindowsApps\Microsoft.WindowsTerminal.exe" "Realtime"
 powershell -executionpolicy bypass -file "C:\Users\jan\Set-Scheduling-Priority.ps1" "C:\PROGRA~2\Grinding Gear Games\Path of Exile\PathOfExile.exe" "HIGH"
 ```
 
