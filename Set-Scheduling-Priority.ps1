@@ -53,7 +53,7 @@ function Phase-1 {
     $Pwd = Split-Path $Executable
     $Executable = Split-Path $Executable -leaf 
     $ProcessName = $Executable.Split(".")[0]
-    if ([string]::IsNullOrEmpty($Pwd)) {Set-Location $Pwd}
+    if (-not [string]::IsNullOrEmpty($Pwd)) {Set-Location $Pwd}
     Start-Process $Executable
     Get-process -processname $ProcessName | foreach {$_.PriorityClass = $Piority}
 }
